@@ -1,0 +1,828 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		667333209A3510194F0EE9A1 /* Pods_modularizationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B465539682575B6AE1F687B /* Pods_modularizationDemo.framework */; };
+		F251ACEE2000BCB200DC0A7C /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F251ACED2000BCB200DC0A7C /* DBManager.m */; };
+		F251ACF12000BD0F00DC0A7C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F251ACF02000BD0F00DC0A7C /* Person.m */; };
+		F26F40A71FCCF9BB00D080EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F40A61FCCF9BB00D080EE /* AppDelegate.m */; };
+		F26F40AA1FCCF9BB00D080EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F40A91FCCF9BB00D080EE /* ViewController.m */; };
+		F26F40AD1FCCF9BB00D080EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26F40AB1FCCF9BB00D080EE /* Main.storyboard */; };
+		F26F40AF1FCCF9BB00D080EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F26F40AE1FCCF9BB00D080EE /* Assets.xcassets */; };
+		F26F40B21FCCF9BB00D080EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26F40B01FCCF9BB00D080EE /* LaunchScreen.storyboard */; };
+		F26F40B51FCCF9BB00D080EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F40B41FCCF9BB00D080EE /* main.m */; };
+		F26F40BF1FCCF9BB00D080EE /* modularizationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F40BE1FCCF9BB00D080EE /* modularizationDemoTests.m */; };
+		F26F40CA1FCCF9BB00D080EE /* modularizationDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F40C91FCCF9BB00D080EE /* modularizationDemoUITests.m */; };
+		F26F40D91FCCFC6400D080EE /* ModuleProtocolManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F40D81FCCFC6400D080EE /* ModuleProtocolManager.m */; };
+		F26F40DC1FCD011B00D080EE /* ModuleA.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F40DB1FCD011B00D080EE /* ModuleA.m */; };
+		F26F40E41FCD054D00D080EE /* moduleAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F40E31FCD054D00D080EE /* moduleAViewController.m */; };
+		F2C0068F1FE8F633001E1FE9 /* UIViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C0068E1FE8F633001E1FE9 /* UIViewController+Tracking.m */; };
+		F2C006B71FE91073001E1FE9 /* StackForNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C006B51FE91073001E1FE9 /* StackForNSObject.m */; };
+		F2C006FB1FEBDD6E001E1FE9 /* LLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C006F91FEBDD6E001E1FE9 /* LLTabBarController.m */; };
+		F2C006FC1FEBDD6E001E1FE9 /* LLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C006FA1FEBDD6E001E1FE9 /* LLNavigationController.m */; };
+		F2C006FF1FEBDDE4001E1FE9 /* HomeModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C006FD1FEBDDE4001E1FE9 /* HomeModuleViewController.m */; };
+		F2C007021FEBDDF0001E1FE9 /* MeModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C007011FEBDDEF001E1FE9 /* MeModuleViewController.m */; };
+		F2C0070D1FEBDED5001E1FE9 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C007081FEBDED5001E1FE9 /* UIImage+Extension.m */; };
+		F2C0070E1FEBDED5001E1FE9 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C007091FEBDED5001E1FE9 /* UIColor+Extension.m */; };
+		F2C0070F1FEBDED5001E1FE9 /* LLUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C0070C1FEBDED5001E1FE9 /* LLUtils.m */; };
+		F2C007121FEBDF4B001E1FE9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C007111FEBDF4B001E1FE9 /* LoginViewController.m */; };
+		F2C007151FEBDFFC001E1FE9 /* UINavigationController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C007141FEBDFFC001E1FE9 /* UINavigationController+Tracking.m */; };
+		F2C0071D1FECEFB1001E1FE9 /* LLModuleTree.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C0071B1FECEFB1001E1FE9 /* LLModuleTree.m */; };
+		F2C007281FEF8F4C001E1FE9 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C007271FEF8F4C001E1FE9 /* RegisterViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F26F40BB1FCCF9BB00D080EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F26F409A1FCCF9BB00D080EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F26F40A11FCCF9BB00D080EE;
+			remoteInfo = modularizationDemo;
+		};
+		F26F40C61FCCF9BB00D080EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F26F409A1FCCF9BB00D080EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F26F40A11FCCF9BB00D080EE;
+			remoteInfo = modularizationDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B465539682575B6AE1F687B /* Pods_modularizationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_modularizationDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDCB1009516BC00643B25EAC /* Pods-modularizationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modularizationDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-modularizationDemo/Pods-modularizationDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F251ACEC2000BCB200DC0A7C /* DBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		F251ACED2000BCB200DC0A7C /* DBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		F251ACEF2000BD0F00DC0A7C /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		F251ACF02000BD0F00DC0A7C /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		F26F40A21FCCF9BB00D080EE /* modularizationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = modularizationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F26F40A51FCCF9BB00D080EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F26F40A61FCCF9BB00D080EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F26F40A81FCCF9BB00D080EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F26F40A91FCCF9BB00D080EE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F26F40AC1FCCF9BB00D080EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F26F40AE1FCCF9BB00D080EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F26F40B11FCCF9BB00D080EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F26F40B31FCCF9BB00D080EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F26F40B41FCCF9BB00D080EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F26F40BA1FCCF9BB00D080EE /* modularizationDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = modularizationDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F26F40BE1FCCF9BB00D080EE /* modularizationDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = modularizationDemoTests.m; sourceTree = "<group>"; };
+		F26F40C01FCCF9BB00D080EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F26F40C51FCCF9BB00D080EE /* modularizationDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = modularizationDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F26F40C91FCCF9BB00D080EE /* modularizationDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = modularizationDemoUITests.m; sourceTree = "<group>"; };
+		F26F40CB1FCCF9BB00D080EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F26F40D71FCCFC6400D080EE /* ModuleProtocolManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleProtocolManager.h; sourceTree = "<group>"; };
+		F26F40D81FCCFC6400D080EE /* ModuleProtocolManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleProtocolManager.m; sourceTree = "<group>"; };
+		F26F40DA1FCD011B00D080EE /* ModuleA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleA.h; sourceTree = "<group>"; };
+		F26F40DB1FCD011B00D080EE /* ModuleA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleA.m; sourceTree = "<group>"; };
+		F26F40E11FCD022000D080EE /* ModuleAProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleAProtocol.h; sourceTree = "<group>"; };
+		F26F40E21FCD054D00D080EE /* moduleAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = moduleAViewController.h; sourceTree = "<group>"; };
+		F26F40E31FCD054D00D080EE /* moduleAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = moduleAViewController.m; sourceTree = "<group>"; };
+		F2C0068D1FE8F633001E1FE9 /* UIViewController+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tracking.h"; sourceTree = "<group>"; };
+		F2C0068E1FE8F633001E1FE9 /* UIViewController+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tracking.m"; sourceTree = "<group>"; };
+		F2C006B51FE91073001E1FE9 /* StackForNSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackForNSObject.m; sourceTree = "<group>"; };
+		F2C006B61FE91073001E1FE9 /* StackForNSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackForNSObject.h; sourceTree = "<group>"; };
+		F2C006F71FEBDD6E001E1FE9 /* LLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTabBarController.h; sourceTree = "<group>"; };
+		F2C006F81FEBDD6E001E1FE9 /* LLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLNavigationController.h; sourceTree = "<group>"; };
+		F2C006F91FEBDD6E001E1FE9 /* LLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTabBarController.m; sourceTree = "<group>"; };
+		F2C006FA1FEBDD6E001E1FE9 /* LLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLNavigationController.m; sourceTree = "<group>"; };
+		F2C006FD1FEBDDE4001E1FE9 /* HomeModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModuleViewController.m; sourceTree = "<group>"; };
+		F2C006FE1FEBDDE4001E1FE9 /* HomeModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModuleViewController.h; sourceTree = "<group>"; };
+		F2C007001FEBDDEF001E1FE9 /* MeModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeModuleViewController.h; sourceTree = "<group>"; };
+		F2C007011FEBDDEF001E1FE9 /* MeModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeModuleViewController.m; sourceTree = "<group>"; };
+		F2C007051FEBDED5001E1FE9 /* LLMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLMacro.h; sourceTree = "<group>"; };
+		F2C007071FEBDED5001E1FE9 /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		F2C007081FEBDED5001E1FE9 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		F2C007091FEBDED5001E1FE9 /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		F2C0070A1FEBDED5001E1FE9 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		F2C0070B1FEBDED5001E1FE9 /* LLUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLUtils.h; sourceTree = "<group>"; };
+		F2C0070C1FEBDED5001E1FE9 /* LLUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLUtils.m; sourceTree = "<group>"; };
+		F2C007101FEBDF4B001E1FE9 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		F2C007111FEBDF4B001E1FE9 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		F2C007131FEBDFFC001E1FE9 /* UINavigationController+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Tracking.h"; sourceTree = "<group>"; };
+		F2C007141FEBDFFC001E1FE9 /* UINavigationController+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Tracking.m"; sourceTree = "<group>"; };
+		F2C0071B1FECEFB1001E1FE9 /* LLModuleTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLModuleTree.m; sourceTree = "<group>"; };
+		F2C0071C1FECEFB1001E1FE9 /* LLModuleTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLModuleTree.h; sourceTree = "<group>"; };
+		F2C007261FEF8F4C001E1FE9 /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		F2C007271FEF8F4C001E1FE9 /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		FFCCF62DEFBB19D8A81421D8 /* Pods-modularizationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modularizationDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-modularizationDemo/Pods-modularizationDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F26F409F1FCCF9BB00D080EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667333209A3510194F0EE9A1 /* Pods_modularizationDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F26F40B71FCCF9BB00D080EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F26F40C21FCCF9BB00D080EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F8B4032ABD19353A1EAF78C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDCB1009516BC00643B25EAC /* Pods-modularizationDemo.debug.xcconfig */,
+				FFCCF62DEFBB19D8A81421D8 /* Pods-modularizationDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF31C5EE37296144A9E52D91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B465539682575B6AE1F687B /* Pods_modularizationDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F251ACEB2000BC9200DC0A7C /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				F251ACEC2000BCB200DC0A7C /* DBManager.h */,
+				F251ACED2000BCB200DC0A7C /* DBManager.m */,
+				F251ACEF2000BD0F00DC0A7C /* Person.h */,
+				F251ACF02000BD0F00DC0A7C /* Person.m */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		F26F40991FCCF9BB00D080EE = {
+			isa = PBXGroup;
+			children = (
+				F26F40A41FCCF9BB00D080EE /* modularizationDemo */,
+				F26F40BD1FCCF9BB00D080EE /* modularizationDemoTests */,
+				F26F40C81FCCF9BB00D080EE /* modularizationDemoUITests */,
+				F26F40A31FCCF9BB00D080EE /* Products */,
+				6F8B4032ABD19353A1EAF78C /* Pods */,
+				EF31C5EE37296144A9E52D91 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F26F40A31FCCF9BB00D080EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F26F40A21FCCF9BB00D080EE /* modularizationDemo.app */,
+				F26F40BA1FCCF9BB00D080EE /* modularizationDemoTests.xctest */,
+				F26F40C51FCCF9BB00D080EE /* modularizationDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F26F40A41FCCF9BB00D080EE /* modularizationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F26F40A51FCCF9BB00D080EE /* AppDelegate.h */,
+				F26F40A61FCCF9BB00D080EE /* AppDelegate.m */,
+				F26F40A81FCCF9BB00D080EE /* ViewController.h */,
+				F26F40A91FCCF9BB00D080EE /* ViewController.m */,
+				F251ACEB2000BC9200DC0A7C /* DataBase */,
+				F2C007041FEBDED5001E1FE9 /* Common */,
+				F2C006F61FEBDD58001E1FE9 /* Main */,
+				F2C007161FEBDFFF001E1FE9 /* Tracking */,
+				F26F40D71FCCFC6400D080EE /* ModuleProtocolManager.h */,
+				F26F40D81FCCFC6400D080EE /* ModuleProtocolManager.m */,
+				F2C006B61FE91073001E1FE9 /* StackForNSObject.h */,
+				F2C006B51FE91073001E1FE9 /* StackForNSObject.m */,
+				F2C0071C1FECEFB1001E1FE9 /* LLModuleTree.h */,
+				F2C0071B1FECEFB1001E1FE9 /* LLModuleTree.m */,
+				F26F40DD1FCD011E00D080EE /* ModuleA */,
+				F26F40AB1FCCF9BB00D080EE /* Main.storyboard */,
+				F26F40AE1FCCF9BB00D080EE /* Assets.xcassets */,
+				F26F40B01FCCF9BB00D080EE /* LaunchScreen.storyboard */,
+				F26F40B31FCCF9BB00D080EE /* Info.plist */,
+				F26F40B41FCCF9BB00D080EE /* main.m */,
+			);
+			path = modularizationDemo;
+			sourceTree = "<group>";
+		};
+		F26F40BD1FCCF9BB00D080EE /* modularizationDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F26F40BE1FCCF9BB00D080EE /* modularizationDemoTests.m */,
+				F26F40C01FCCF9BB00D080EE /* Info.plist */,
+			);
+			path = modularizationDemoTests;
+			sourceTree = "<group>";
+		};
+		F26F40C81FCCF9BB00D080EE /* modularizationDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F26F40C91FCCF9BB00D080EE /* modularizationDemoUITests.m */,
+				F26F40CB1FCCF9BB00D080EE /* Info.plist */,
+			);
+			path = modularizationDemoUITests;
+			sourceTree = "<group>";
+		};
+		F26F40DD1FCD011E00D080EE /* ModuleA */ = {
+			isa = PBXGroup;
+			children = (
+				F26F40E11FCD022000D080EE /* ModuleAProtocol.h */,
+				F26F40DA1FCD011B00D080EE /* ModuleA.h */,
+				F26F40DB1FCD011B00D080EE /* ModuleA.m */,
+				F26F40E21FCD054D00D080EE /* moduleAViewController.h */,
+				F26F40E31FCD054D00D080EE /* moduleAViewController.m */,
+			);
+			path = ModuleA;
+			sourceTree = "<group>";
+		};
+		F2C006F61FEBDD58001E1FE9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F2C006F81FEBDD6E001E1FE9 /* LLNavigationController.h */,
+				F2C006FA1FEBDD6E001E1FE9 /* LLNavigationController.m */,
+				F2C006F71FEBDD6E001E1FE9 /* LLTabBarController.h */,
+				F2C006F91FEBDD6E001E1FE9 /* LLTabBarController.m */,
+				F2C006FE1FEBDDE4001E1FE9 /* HomeModuleViewController.h */,
+				F2C006FD1FEBDDE4001E1FE9 /* HomeModuleViewController.m */,
+				F2C007001FEBDDEF001E1FE9 /* MeModuleViewController.h */,
+				F2C007011FEBDDEF001E1FE9 /* MeModuleViewController.m */,
+				F2C007101FEBDF4B001E1FE9 /* LoginViewController.h */,
+				F2C007111FEBDF4B001E1FE9 /* LoginViewController.m */,
+				F2C007261FEF8F4C001E1FE9 /* RegisterViewController.h */,
+				F2C007271FEF8F4C001E1FE9 /* RegisterViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F2C007041FEBDED5001E1FE9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F2C007051FEBDED5001E1FE9 /* LLMacro.h */,
+				F2C007061FEBDED5001E1FE9 /* Category */,
+				F2C0070B1FEBDED5001E1FE9 /* LLUtils.h */,
+				F2C0070C1FEBDED5001E1FE9 /* LLUtils.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F2C007061FEBDED5001E1FE9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F2C007071FEBDED5001E1FE9 /* UIColor+Extension.h */,
+				F2C007081FEBDED5001E1FE9 /* UIImage+Extension.m */,
+				F2C007091FEBDED5001E1FE9 /* UIColor+Extension.m */,
+				F2C0070A1FEBDED5001E1FE9 /* UIImage+Extension.h */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F2C007161FEBDFFF001E1FE9 /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				F2C0068D1FE8F633001E1FE9 /* UIViewController+Tracking.h */,
+				F2C0068E1FE8F633001E1FE9 /* UIViewController+Tracking.m */,
+				F2C007131FEBDFFC001E1FE9 /* UINavigationController+Tracking.h */,
+				F2C007141FEBDFFC001E1FE9 /* UINavigationController+Tracking.m */,
+			);
+			path = Tracking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F26F40A11FCCF9BB00D080EE /* modularizationDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F26F40CE1FCCF9BB00D080EE /* Build configuration list for PBXNativeTarget "modularizationDemo" */;
+			buildPhases = (
+				9FC28136C4CF655497E85196 /* [CP] Check Pods Manifest.lock */,
+				F26F409E1FCCF9BB00D080EE /* Sources */,
+				F26F409F1FCCF9BB00D080EE /* Frameworks */,
+				F26F40A01FCCF9BB00D080EE /* Resources */,
+				69BD74DF1E33DBF11835D5E7 /* [CP] Embed Pods Frameworks */,
+				D5C4246D48C0489B81E26C3B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = modularizationDemo;
+			productName = modularizationDemo;
+			productReference = F26F40A21FCCF9BB00D080EE /* modularizationDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F26F40B91FCCF9BB00D080EE /* modularizationDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F26F40D11FCCF9BB00D080EE /* Build configuration list for PBXNativeTarget "modularizationDemoTests" */;
+			buildPhases = (
+				F26F40B61FCCF9BB00D080EE /* Sources */,
+				F26F40B71FCCF9BB00D080EE /* Frameworks */,
+				F26F40B81FCCF9BB00D080EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F26F40BC1FCCF9BB00D080EE /* PBXTargetDependency */,
+			);
+			name = modularizationDemoTests;
+			productName = modularizationDemoTests;
+			productReference = F26F40BA1FCCF9BB00D080EE /* modularizationDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F26F40C41FCCF9BB00D080EE /* modularizationDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F26F40D41FCCF9BB00D080EE /* Build configuration list for PBXNativeTarget "modularizationDemoUITests" */;
+			buildPhases = (
+				F26F40C11FCCF9BB00D080EE /* Sources */,
+				F26F40C21FCCF9BB00D080EE /* Frameworks */,
+				F26F40C31FCCF9BB00D080EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F26F40C71FCCF9BB00D080EE /* PBXTargetDependency */,
+			);
+			name = modularizationDemoUITests;
+			productName = modularizationDemoUITests;
+			productReference = F26F40C51FCCF9BB00D080EE /* modularizationDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F26F409A1FCCF9BB00D080EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = lee;
+				TargetAttributes = {
+					F26F40A11FCCF9BB00D080EE = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					F26F40B91FCCF9BB00D080EE = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F26F40A11FCCF9BB00D080EE;
+					};
+					F26F40C41FCCF9BB00D080EE = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F26F40A11FCCF9BB00D080EE;
+					};
+				};
+			};
+			buildConfigurationList = F26F409D1FCCF9BB00D080EE /* Build configuration list for PBXProject "modularizationDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F26F40991FCCF9BB00D080EE;
+			productRefGroup = F26F40A31FCCF9BB00D080EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F26F40A11FCCF9BB00D080EE /* modularizationDemo */,
+				F26F40B91FCCF9BB00D080EE /* modularizationDemoTests */,
+				F26F40C41FCCF9BB00D080EE /* modularizationDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F26F40A01FCCF9BB00D080EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26F40B21FCCF9BB00D080EE /* LaunchScreen.storyboard in Resources */,
+				F26F40AF1FCCF9BB00D080EE /* Assets.xcassets in Resources */,
+				F26F40AD1FCCF9BB00D080EE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F26F40B81FCCF9BB00D080EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F26F40C31FCCF9BB00D080EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69BD74DF1E33DBF11835D5E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-modularizationDemo/Pods-modularizationDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-modularizationDemo/Pods-modularizationDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FC28136C4CF655497E85196 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-modularizationDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5C4246D48C0489B81E26C3B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-modularizationDemo/Pods-modularizationDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F26F409E1FCCF9BB00D080EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26F40AA1FCCF9BB00D080EE /* ViewController.m in Sources */,
+				F2C0068F1FE8F633001E1FE9 /* UIViewController+Tracking.m in Sources */,
+				F26F40D91FCCFC6400D080EE /* ModuleProtocolManager.m in Sources */,
+				F2C0070E1FEBDED5001E1FE9 /* UIColor+Extension.m in Sources */,
+				F26F40B51FCCF9BB00D080EE /* main.m in Sources */,
+				F2C006FF1FEBDDE4001E1FE9 /* HomeModuleViewController.m in Sources */,
+				F2C006FB1FEBDD6E001E1FE9 /* LLTabBarController.m in Sources */,
+				F2C007151FEBDFFC001E1FE9 /* UINavigationController+Tracking.m in Sources */,
+				F2C007281FEF8F4C001E1FE9 /* RegisterViewController.m in Sources */,
+				F251ACF12000BD0F00DC0A7C /* Person.m in Sources */,
+				F2C007021FEBDDF0001E1FE9 /* MeModuleViewController.m in Sources */,
+				F2C007121FEBDF4B001E1FE9 /* LoginViewController.m in Sources */,
+				F26F40A71FCCF9BB00D080EE /* AppDelegate.m in Sources */,
+				F2C0070D1FEBDED5001E1FE9 /* UIImage+Extension.m in Sources */,
+				F26F40E41FCD054D00D080EE /* moduleAViewController.m in Sources */,
+				F2C0071D1FECEFB1001E1FE9 /* LLModuleTree.m in Sources */,
+				F2C006FC1FEBDD6E001E1FE9 /* LLNavigationController.m in Sources */,
+				F2C006B71FE91073001E1FE9 /* StackForNSObject.m in Sources */,
+				F2C0070F1FEBDED5001E1FE9 /* LLUtils.m in Sources */,
+				F26F40DC1FCD011B00D080EE /* ModuleA.m in Sources */,
+				F251ACEE2000BCB200DC0A7C /* DBManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F26F40B61FCCF9BB00D080EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26F40BF1FCCF9BB00D080EE /* modularizationDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F26F40C11FCCF9BB00D080EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26F40CA1FCCF9BB00D080EE /* modularizationDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F26F40BC1FCCF9BB00D080EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F26F40A11FCCF9BB00D080EE /* modularizationDemo */;
+			targetProxy = F26F40BB1FCCF9BB00D080EE /* PBXContainerItemProxy */;
+		};
+		F26F40C71FCCF9BB00D080EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F26F40A11FCCF9BB00D080EE /* modularizationDemo */;
+			targetProxy = F26F40C61FCCF9BB00D080EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F26F40AB1FCCF9BB00D080EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F26F40AC1FCCF9BB00D080EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F26F40B01FCCF9BB00D080EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F26F40B11FCCF9BB00D080EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F26F40CC1FCCF9BB00D080EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F26F40CD1FCCF9BB00D080EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F26F40CF1FCCF9BB00D080EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDCB1009516BC00643B25EAC /* Pods-modularizationDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6N4LW89MGE;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = modularizationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"PureLayout\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lee.modularizationDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		F26F40D01FCCF9BB00D080EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFCCF62DEFBB19D8A81421D8 /* Pods-modularizationDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6N4LW89MGE;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = modularizationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"PureLayout\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lee.modularizationDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		F26F40D21FCCF9BB00D080EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6N4LW89MGE;
+				INFOPLIST_FILE = modularizationDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lee.modularizationDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/modularizationDemo.app/modularizationDemo";
+			};
+			name = Debug;
+		};
+		F26F40D31FCCF9BB00D080EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6N4LW89MGE;
+				INFOPLIST_FILE = modularizationDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lee.modularizationDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/modularizationDemo.app/modularizationDemo";
+			};
+			name = Release;
+		};
+		F26F40D51FCCF9BB00D080EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6N4LW89MGE;
+				INFOPLIST_FILE = modularizationDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lee.modularizationDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = modularizationDemo;
+			};
+			name = Debug;
+		};
+		F26F40D61FCCF9BB00D080EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6N4LW89MGE;
+				INFOPLIST_FILE = modularizationDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lee.modularizationDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = modularizationDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F26F409D1FCCF9BB00D080EE /* Build configuration list for PBXProject "modularizationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F26F40CC1FCCF9BB00D080EE /* Debug */,
+				F26F40CD1FCCF9BB00D080EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F26F40CE1FCCF9BB00D080EE /* Build configuration list for PBXNativeTarget "modularizationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F26F40CF1FCCF9BB00D080EE /* Debug */,
+				F26F40D01FCCF9BB00D080EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F26F40D11FCCF9BB00D080EE /* Build configuration list for PBXNativeTarget "modularizationDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F26F40D21FCCF9BB00D080EE /* Debug */,
+				F26F40D31FCCF9BB00D080EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F26F40D41FCCF9BB00D080EE /* Build configuration list for PBXNativeTarget "modularizationDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F26F40D51FCCF9BB00D080EE /* Debug */,
+				F26F40D61FCCF9BB00D080EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F26F409A1FCCF9BB00D080EE /* Project object */;
+}

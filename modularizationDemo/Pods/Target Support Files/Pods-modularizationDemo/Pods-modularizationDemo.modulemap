@@ -1,0 +1,6 @@
+framework module Pods_modularizationDemo {
+  umbrella header "Pods-modularizationDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
