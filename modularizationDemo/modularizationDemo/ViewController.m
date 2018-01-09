@@ -12,7 +12,6 @@
 #import <signal.h>
 #import <execinfo.h>
 #import "StackForNSObject.h"
-#import "DBManager.h"
 #import "Person.h"
 
 #define BeeHiveMod(name) char * k##name##_mod = ""#name"";
@@ -141,44 +140,5 @@ void signalHandler(int sig) {
 
 #pragma mark - DataBase
 
-
-void test() {
-    DBManager *mgr = [DBManager sharedManager];
-    //查询数据
-    NSArray *array = [mgr getAllPersons];
-    for (int i = 0; i < array.count; i++) {
-        NSLog(@"%@",array[i]);
-    }
-    /*输出结果
-     2015-06-27 15:01:29.290 MySqlTest[2451:145448] 连接成功
-     2015-06-27 15:01:29.291 MySqlTest[2451:145448] 1 李文深 男 23 12345678910
-     2015-06-27 15:01:29.291 MySqlTest[2451:145448] 2 张三 男 33 13099881235
-     2015-06-27 15:01:29.291 MySqlTest[2451:145448] 3 李四 女 20 -
-     2015-06-27 15:01:29.291 MySqlTest[2451:145448] 4 敌法师 男 8 18825694821
-     */
-    /*
-     person这个类的属性:
-     @property (nonatomic,copy) NSString *ID;
-     @property (nonatomic,copy) NSString *name;
-     @property (nonatomic,copy) NSString *sex;
-     @property (nonatomic,copy) NSString *age;
-     @property (nonatomic,copy) NSString *tel;
-     */
-    
-    
-    //添加数据
-    Person *p = [[Person alloc] init];
-    p.name = @"传说哥";
-    p.age = @"50";
-    p.sex = @"男";
-    p.tel = @"11111111111";
-    //    [mgr addPerson:p];
-    
-    /*
-     //删除数据
-     p.ID = @"1";
-     [mgr deletaPerson:p];
-     */
-}
 
 @end

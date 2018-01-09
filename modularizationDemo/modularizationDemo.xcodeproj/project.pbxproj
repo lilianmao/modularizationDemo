@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		667333209A3510194F0EE9A1 /* Pods_modularizationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B465539682575B6AE1F687B /* Pods_modularizationDemo.framework */; };
-		F251ACEE2000BCB200DC0A7C /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F251ACED2000BCB200DC0A7C /* DBManager.m */; };
-		F251ACF12000BD0F00DC0A7C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F251ACF02000BD0F00DC0A7C /* Person.m */; };
 		F26F40A71FCCF9BB00D080EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F40A61FCCF9BB00D080EE /* AppDelegate.m */; };
 		F26F40AA1FCCF9BB00D080EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F40A91FCCF9BB00D080EE /* ViewController.m */; };
 		F26F40AD1FCCF9BB00D080EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26F40AB1FCCF9BB00D080EE /* Main.storyboard */; };
@@ -56,10 +54,6 @@
 /* Begin PBXFileReference section */
 		0B465539682575B6AE1F687B /* Pods_modularizationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_modularizationDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDCB1009516BC00643B25EAC /* Pods-modularizationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modularizationDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-modularizationDemo/Pods-modularizationDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		F251ACEC2000BCB200DC0A7C /* DBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
-		F251ACED2000BCB200DC0A7C /* DBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
-		F251ACEF2000BD0F00DC0A7C /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		F251ACF02000BD0F00DC0A7C /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		F26F40A21FCCF9BB00D080EE /* modularizationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = modularizationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F26F40A51FCCF9BB00D080EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F26F40A61FCCF9BB00D080EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -159,10 +153,6 @@
 		F251ACEB2000BC9200DC0A7C /* DataBase */ = {
 			isa = PBXGroup;
 			children = (
-				F251ACEC2000BCB200DC0A7C /* DBManager.h */,
-				F251ACED2000BCB200DC0A7C /* DBManager.m */,
-				F251ACEF2000BD0F00DC0A7C /* Person.h */,
-				F251ACF02000BD0F00DC0A7C /* Person.m */,
 			);
 			path = DataBase;
 			sourceTree = "<group>";
@@ -501,7 +491,6 @@
 				F2C006FB1FEBDD6E001E1FE9 /* LLTabBarController.m in Sources */,
 				F2C007151FEBDFFC001E1FE9 /* UINavigationController+Tracking.m in Sources */,
 				F2C007281FEF8F4C001E1FE9 /* RegisterViewController.m in Sources */,
-				F251ACF12000BD0F00DC0A7C /* Person.m in Sources */,
 				F2C007021FEBDDF0001E1FE9 /* MeModuleViewController.m in Sources */,
 				F2C007121FEBDF4B001E1FE9 /* LoginViewController.m in Sources */,
 				F26F40A71FCCF9BB00D080EE /* AppDelegate.m in Sources */,
@@ -512,7 +501,6 @@
 				F2C006B71FE91073001E1FE9 /* StackForNSObject.m in Sources */,
 				F2C0070F1FEBDED5001E1FE9 /* LLUtils.m in Sources */,
 				F26F40DC1FCD011B00D080EE /* ModuleA.m in Sources */,
-				F251ACEE2000BCB200DC0A7C /* DBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
