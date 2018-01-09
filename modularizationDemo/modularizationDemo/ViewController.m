@@ -12,7 +12,6 @@
 #import <signal.h>
 #import <execinfo.h>
 #import "StackForNSObject.h"
-#import "Person.h"
 
 #define BeeHiveMod(name) char * k##name##_mod = ""#name"";
 
@@ -136,6 +135,7 @@ void signalHandler(int sig) {
 
 - (void)hookTest {
     UIViewController *twoVC = [[UIViewController alloc] init];
+    NSLog(@"%@", twoVC);
 }
 
 #pragma mark - DataBase

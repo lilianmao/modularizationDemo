@@ -7,6 +7,8 @@ def pods
     pod 'AFNetworking', '2.6.3'
     pod 'SVProgressHUD'
     pod 'PureLayout', '~> 3.0.1'
+    pod 'FMDB'
+    pod 'BGFMDB'
 end
 
 target 'modularizationDemo' do

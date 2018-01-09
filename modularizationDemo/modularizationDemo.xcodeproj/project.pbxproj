@@ -19,6 +19,8 @@
 		F26F40D91FCCFC6400D080EE /* ModuleProtocolManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F40D81FCCFC6400D080EE /* ModuleProtocolManager.m */; };
 		F26F40DC1FCD011B00D080EE /* ModuleA.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F40DB1FCD011B00D080EE /* ModuleA.m */; };
 		F26F40E41FCD054D00D080EE /* moduleAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F40E31FCD054D00D080EE /* moduleAViewController.m */; };
+		F29C93692004B8AA006F97C1 /* DataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = F29C93682004B8AA006F97C1 /* DataBase.m */; };
+		F29C936C2004B8EC006F97C1 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F29C936B2004B8EC006F97C1 /* Person.m */; };
 		F2C0068F1FE8F633001E1FE9 /* UIViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C0068E1FE8F633001E1FE9 /* UIViewController+Tracking.m */; };
 		F2C006B71FE91073001E1FE9 /* StackForNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C006B51FE91073001E1FE9 /* StackForNSObject.m */; };
 		F2C006FB1FEBDD6E001E1FE9 /* LLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C006F91FEBDD6E001E1FE9 /* LLTabBarController.m */; };
@@ -77,6 +79,10 @@
 		F26F40E11FCD022000D080EE /* ModuleAProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleAProtocol.h; sourceTree = "<group>"; };
 		F26F40E21FCD054D00D080EE /* moduleAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = moduleAViewController.h; sourceTree = "<group>"; };
 		F26F40E31FCD054D00D080EE /* moduleAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = moduleAViewController.m; sourceTree = "<group>"; };
+		F29C93672004B8AA006F97C1 /* DataBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataBase.h; sourceTree = "<group>"; };
+		F29C93682004B8AA006F97C1 /* DataBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataBase.m; sourceTree = "<group>"; };
+		F29C936A2004B8EC006F97C1 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		F29C936B2004B8EC006F97C1 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		F2C0068D1FE8F633001E1FE9 /* UIViewController+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tracking.h"; sourceTree = "<group>"; };
 		F2C0068E1FE8F633001E1FE9 /* UIViewController+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tracking.m"; sourceTree = "<group>"; };
 		F2C006B51FE91073001E1FE9 /* StackForNSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackForNSObject.m; sourceTree = "<group>"; };
@@ -153,6 +159,10 @@
 		F251ACEB2000BC9200DC0A7C /* DataBase */ = {
 			isa = PBXGroup;
 			children = (
+				F29C93672004B8AA006F97C1 /* DataBase.h */,
+				F29C93682004B8AA006F97C1 /* DataBase.m */,
+				F29C936A2004B8EC006F97C1 /* Person.h */,
+				F29C936B2004B8EC006F97C1 /* Person.m */,
 			);
 			path = DataBase;
 			sourceTree = "<group>";
@@ -428,12 +438,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-modularizationDemo/Pods-modularizationDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/BGFMDB/BGFMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BGFMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
@@ -488,8 +502,10 @@
 				F2C0070E1FEBDED5001E1FE9 /* UIColor+Extension.m in Sources */,
 				F26F40B51FCCF9BB00D080EE /* main.m in Sources */,
 				F2C006FF1FEBDDE4001E1FE9 /* HomeModuleViewController.m in Sources */,
+				F29C93692004B8AA006F97C1 /* DataBase.m in Sources */,
 				F2C006FB1FEBDD6E001E1FE9 /* LLTabBarController.m in Sources */,
 				F2C007151FEBDFFC001E1FE9 /* UINavigationController+Tracking.m in Sources */,
+				F29C936C2004B8EC006F97C1 /* Person.m in Sources */,
 				F2C007281FEF8F4C001E1FE9 /* RegisterViewController.m in Sources */,
 				F2C007021FEBDDF0001E1FE9 /* MeModuleViewController.m in Sources */,
 				F2C007121FEBDF4B001E1FE9 /* LoginViewController.m in Sources */,
